@@ -142,7 +142,8 @@ class App extends React.Component {
 export default App
 ```
 
-## 04. Inline/Styling
+## 04.Styling
+### A. Inline
 Pemberian styling dengan cara Inline merupakan salah satu yang cukup mudah dilakukan, ketika digunakan pada HTML.
 
 Contoh 1:
@@ -180,3 +181,11 @@ function App() {
   );
 }
 ```
+
+### B. External
+Bagaimana cara menggunakan External Style pada React?
+1. Pertama, kita siapkan file CSS-nya.
+
+2. Lalu, pada file component, kita import file styling.
+
+3. Selanjutnya, hanya bermain dengan selector (tag, id, class) sesuai dengan kebutuhan. Jika ingin menggunakan selector class, gunakan className. Ini disebabkan karena JavaScript sudah memiliki key word class, maka dari itu di JSX kita menggantinya dengan className.
