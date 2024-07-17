@@ -124,3 +124,20 @@ listBuah di-loop menggunakan map().
 map() diisi dengan callback function yang mengembalikan element <li>.
 Atribute/Props key pada <li> digunakan sebagai pembeda antara <li> buah yang satu dengan yang lain. Biasanya diisi dengan id dari sebuah item.
 Maka jeruk, rambutan, dan pepaya akan muncul dengan tampilan list.
+
+## 03. Class Component
+Selain pembuatan component menggunakan bentuk function, ada juga pembuatan komponen menggunakan class (Class Component). Cara ini sudah ditinggalkan, tapi mungkin saja kamu akan menemuinya pada kode React yang sudah lawas.
+
+Berikut contoh dari sintax Class Component:
+```javaScript
+class App extends React.Component {
+  render() {
+    return (
+      <h1>Halo Semua!</h1>
+      <p>Selamat Datang</p>
+    );
+  }
+}
+
+export default App
+```
