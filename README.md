@@ -141,3 +141,42 @@ class App extends React.Component {
 
 export default App
 ```
+
+## 04. Inline/Styling
+Pemberian styling dengan cara Inline merupakan salah satu yang cukup mudah dilakukan, ketika digunakan pada HTML.
+
+Contoh 1:
+```javaScript
+function App() {
+  const styles = {
+    color: "blue",
+    fontSize: "16px",
+    backgroundColor: "lightgray",
+  };
+
+  return (
+    <div>
+      <p style={styles}>Ini adalah teks dengan inline style.</p>
+    </div>
+  );
+}
+```
+
+Contoh 2 :
+```javaScript
+function App() {
+  return (
+    <div>
+      <p
+        style={{
+          color: "blue",
+          fontSize: "16px",
+          backgroundColor: "lightgray",
+        }}
+      >
+        Ini adalah teks dengan inline style.
+      </p>
+    </div>
+  );
+}
+```

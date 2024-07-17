@@ -36,20 +36,20 @@
 
 // 03-Functional-Component
 
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div>
-      <h1>Halo Semua!</h1>
-      <p>Selamat Datang di aplikasi React Pertamaku</p>
+// function App() {
+//   return (
+//     <div>
+//       <h1>Halo Semua!</h1>
+//       <p>Selamat Datang di aplikasi React Pertamaku</p>
 
-      <Footer />
-    </div>
-  );
-}
+//       <Footer />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 // Class Component,Selain pembuatan component menggunakan bentuk function, ada juga pembuatan komponen menggunakan class (Class Component)
 // class App extends React.Component {
@@ -62,3 +62,38 @@ export default App;
 // }
 
 // export default App
+
+// 04-Styling
+// function App() {
+//   return (
+//     <div>
+//       <p
+//         style={{
+//           color: "blue",
+//           fontSize: "16px",
+//           backgroundColor: "lightgray",
+//         }}
+//       >
+//         Ini adalah teks dengan inline style.
+//       </p>
+//     </div>
+//   );
+// }
+
+// export default App
+
+// Contoh 2
+function App() {
+  const styles = {
+    color: "blue",
+    fontSize: "16px",
+    backgroundColor: "lightgray",
+  };
+
+  return (
+    <div>
+      <p style={styles}>Ini adalah teks dengan inline style.</p>
+    </div>
+  );
+}
+export default App
