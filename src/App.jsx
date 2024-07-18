@@ -83,17 +83,49 @@
 // export default App
 
 // Contoh 2
-function App() {
-  const styles = {
-    color: "blue",
-    fontSize: "16px",
-    backgroundColor: "lightgray",
-  };
+// function App() {
+//   const styles = {
+//     color: "blue",
+//     fontSize: "16px",
+//     backgroundColor: "lightgray",
+//   };
+
+//   return (
+//     <div>
+//       <p style={styles}>Ini adalah teks dengan inline style.</p>
+//     </div>
+//   );
+// }
+// export default App
+
+// 05 Props Data
+// // Contoh 1
+// import Card from './Card'
+// function App(){
+//   return (
+//     <>
+//       <Card img="html.png" name="HTML Dasar" />
+//       <Card img="css.png" name="CSS Dasar" />
+//       <Card img="javascript.png" name="javascript" />
+//     </>
+//   )
+// }
+
+// export default App;
+
+
+// Contoh 2
+import './Buah.css'
+import './CardBuah.jsx'
+function App(){
+  let listBuah = ["Semangka","Jambu","Mangga","Rambutan"]
 
   return (
-    <div>
-      <p style={styles}>Ini adalah teks dengan inline style.</p>
-    </div>
-  );
+    <ul>
+      {listBuah.map((item,index)=>(
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  )
 }
-export default App
+export default App;
