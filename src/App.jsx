@@ -113,19 +113,79 @@
 
 // export default App;
 
+// import Card from './Card'
+// function App(){
+//   return (
+//     <>
+//       <Card img="html.png" name="HTML Dasar" />
+//       <Card img="css.png" name="CSS Dasar" />
+//       <Card img="javascript.png" name="javascript" />
+//     </>
+//   )
+// }
+
+// export default App;
+
+
 
 // Contoh 2
-import './Buah.css'
-import './CardBuah.jsx'
-function App(){
-  let listBuah = ["Semangka","Jambu","Mangga","Rambutan"]
+// import './Buah.css'
+// import './CardBuah.jsx'
+// function App(){
+//   let listBuah = ["Semangka","Jambu","Mangga","Rambutan"]
 
+//   return (
+//     <ul>
+//       {listBuah.map((item,index)=>(
+//         <li key={index}>{item}</li>
+//       ))}
+//     </ul>
+//   )
+// }
+// export default App;
+
+// Props Children
+// import PageLayout from './PageLayout';
+// import Home from './Home';
+
+// function App() {
+//   return (
+//     <PageLayout>
+//       <Home />
+//     </PageLayout>
+//   );
+// }
+
+// export default App;
+
+// Latihan
+import CardContainer from './CardContainer';
+
+
+function App() {
   return (
-    <ul>
-      {listBuah.map((item,index)=>(
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  )
+    <div>
+      <CardContainer>
+        <form className="login-form">
+          <h2>Login</h2>
+          <div className="form-group">
+            <label htmlFor="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </CardContainer>
+
+      <CardContainer>
+        <p>This is a paragraph inside a CardContainer. It demonstrates how to use the CardContainer component to wrap different types of content.</p>
+      </CardContainer>
+    </div>
+  );
 }
+
 export default App;
+
