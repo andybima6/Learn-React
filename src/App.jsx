@@ -156,36 +156,35 @@
 //   );
 // }
 
-// export default App;
+// export default App
 
 // Latihan
-import CardContainer from './CardContainer';
+// import CardContainer from './CardContainer';
 
+// function App() {
+//   return (
+//     <div>
+//       <CardContainer>
+//         <form className="login-form">
+//           <h2>Login</h2>
+//           <div className="form-group">
+//             <label htmlFor="username">Username:</label>
+//             <input type="text" id="username" name="username" required />
+//           </div>
+//           <div className="form-group">
+//             <label htmlFor="password">Password:</label>
+//             <input type="password" id="password" name="password" required />
+//           </div>
+//           <button type="submit">Login</button>
+//         </form>
+//       </CardContainer>
 
-function App() {
-  return (
-    <div>
-      <CardContainer>
-        <form className="login-form">
-          <h2>Login</h2>
-          <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="username" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </CardContainer>
+//       <CardContainer>
+//         <p>This is a paragraph inside a CardContainer. It demonstrates how to use the CardContainer component to wrap different types of content.</p>
+//       </CardContainer>
+//     </div>
+//   );
+// }
 
-      <CardContainer>
-        <p>This is a paragraph inside a CardContainer. It demonstrates how to use the CardContainer component to wrap different types of content.</p>
-      </CardContainer>
-    </div>
-  );
-}
-
-export default App;
+// export default App;
 
