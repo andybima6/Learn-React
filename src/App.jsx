@@ -126,8 +126,6 @@
 
 // export default App;
 
-
-
 // Contoh 2
 // import './Buah.css'
 // import './CardBuah.jsx'
@@ -188,3 +186,31 @@
 
 // export default App;
 
+// 06 State
+
+// Contoh 1
+
+// import Profile from './Profile';
+// import './App.css';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Profile />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// Contoh 2
+import Kucing from "./Kucing";
+
+function App() {
+  return (
+    <div>
+      <Kucing />
+    </div>
+  );
+}
+export default App;
